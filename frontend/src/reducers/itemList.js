@@ -10,6 +10,7 @@ import {
   PROFILE_PAGE_UNLOADED,
   PROFILE_FAVORITES_PAGE_LOADED,
   PROFILE_FAVORITES_PAGE_UNLOADED,
+  APPLY_SEARCH_FILTER,
 } from "../constants/actionTypes";
 
 const reducer = (state = {}, action) => {
