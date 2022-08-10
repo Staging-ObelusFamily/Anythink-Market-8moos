@@ -1,7 +1,7 @@
 import ItemPreview from "./ItemPreview";
 import ListPagination from "./ListPagination";
 import React from "react";
-import { ReactComponent as SadImg } from "../imgs/sad.png";
+import { ReactComponent as SadImg } from "../imgs/face-sad-tear.svg";
 
 const ItemList = (props) => {
   if (!props.items) {
