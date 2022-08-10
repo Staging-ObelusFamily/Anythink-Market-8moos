@@ -8,6 +8,7 @@ import {
   HOME_PAGE_LOADED,
   HOME_PAGE_UNLOADED,
   APPLY_TAG_FILTER,
+  APPLY_SEARCH_FILTER,
 } from "../../constants/actionTypes";
 
 const Promise = global.Promise;
@@ -24,6 +25,8 @@ const mapDispatchToProps = (dispatch) => ({
   onLoad: (tab, pager, payload) =>
     dispatch({ type: HOME_PAGE_LOADED, tab, pager, payload }),
   onUnload: () => dispatch({ type: HOME_PAGE_UNLOADED }),
+  onSearch: (text, pager, payload) =>
+    dispatch({ type: APPLY_SEARCH_FILTER, text, pager, payload }),
 });
 
 class Home extends React.Component {
