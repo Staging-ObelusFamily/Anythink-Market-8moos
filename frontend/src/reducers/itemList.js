@@ -47,6 +47,11 @@ const reducer = (state = {}, action) => {
         tag: action.tag,
         currentPage: 0,
       };
+    case APPLY_SEARCH_FILTER:
+      return {
+        ...state,
+        searchText: action.payload.searchText,
+      };
     case HOME_PAGE_LOADED:
       return {
         ...state,
