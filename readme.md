@@ -11,4 +11,4 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 ## How to run locally?
 1. [Install Docker](https://docs.docker.com/get-docker/)
 2. [Install Docker Compose](https://docs.docker.com/compose/install/)
-4. Run `docker-compose up`. 
+5. Run `docker-compose up`. 
