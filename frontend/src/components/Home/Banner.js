@@ -22,36 +22,36 @@ const Banner = (props) => {
   };
 
   return (
-      <div className="banner text-white">
-        <div className="container p-4 text-center">
-          <img src={logo} alt="banner" />
-          <div className="d-flex flex-row justify-content-center align-items-baseline">
+    <div className="banner text-white">
+      <div className="container p-4 text-center">
+        <img src={logo} alt="banner" />
+        <div className="d-flex flex-row justify-content-center align-items-baseline">
           <span
-              id="get-part"
-              style={{ cursor: "pointer" }}
-              onClick={onClickHandler}
+            id="get-part"
+            style={{ cursor: "pointer" }}
+            onClick={onClickHandler}
           >
             A place to get
           </span>
-            {isSearchHidden ? (
-                <span>&nbsp;</span>
-            ) : (
-                <form className="col-7">
-                  <fieldset className="form-group">
-                    <input
-                        className="form-control"
-                        id="search-box"
-                        type="search"
-                        placeholder="What is it that you truly desire?"
-                        onChange={onChangeHandler}
-                    />
-                  </fieldset>
-                </form>
-            )}
-            <span>the cool stuff.</span>
-          </div>
+          {isSearchHidden ? (
+            <span>&nbsp;</span>
+          ) : (
+            <form className="col-7">
+              <fieldset className="form-group">
+                <input
+                  className="form-control"
+                  id="search-box"
+                  type="search"
+                  placeholder="What is it that you truly desire?"
+                  onChange={onChangeHandler}
+                />
+              </fieldset>
+            </form>
+          )}
+          <span>the cool stuff.</span>
         </div>
       </div>
+    </div>
   );
 };
 
